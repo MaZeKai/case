@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+.tab_head {
+	background: #ccc;
+}
+.tab_even {
+	background: #ccc;
+}
+.tab_odd {
+	background: #fff;
+}
+.search {
+	color: #bd7a0e;
+}
+.top-header {
+	background: #f1f1f1;
+	height: 30px;
+	line-height: 30px;
+}
+.inner {
+	margin: 0 auto;
+	width: 1210px;
+}
+.top-header .inner ul {
+	float: right;
+	margin-bottom: 8px;
+}
+.top-header .inner ul li {
+	float: left;
+	line-height: 30px;
+	padding: 0px 0px;
+}
+.top-header .inner ul li a {
+	color: #666;
+	padding: 0px 10px;
+}
+.listmore {
+	position: relative;
+	line-height: 0px;
+	margin-right: 20px;
+}
+.listmore i {
+	height: 10px;
+	position: absolute;
+	left: 9px;
+	top: 66%;
+	overflow: hidden;
+	font-size: 20px;
+	margin-top: -3px;
+}
+.top-header .inner ul .shoujijingdong {
+	background-position: 0 7px;
+	padding-left: 5px;
+}
+.banner {
+	height: 120px;
+	background-color: #1c0048;
+}
+.banner .inner img {
+	margin-top: -8px;
+}
+.header {
+	border-bottom: 2px solid #b1191a;
+	height: 146px;
+}
+.logo {
+	padding: 18px 0px;
+	float: left;
+	width: 362px;
+}
+.header .inner form {
+	float: left;
+}
+.search {
+	width: 544px;
+	height: 38px;
+	float: left;
+	margin-top: 25px;
+}
+.header .inner form .sousuolan {
+	border: 2px solid #b61d1d;
+	width: 456px;
+	height: 36px;
+}
+.header .inner form .sousuoanniu {
+	background: #b61d1d;
+	width: 82px;
+	height: 42px;
+	border: none;
+	color: #fff;
+}
+.gouwuche {
+	float: right;
+	width: 139px;
+	height: 34px;
+	border: 1px solid #dfdfdf;
+	text-align: center;
+	line-height: 34px;
+	margin-top: 25px;
+	position: relative;
+}
+.gouwuche a {
+	color: #666;
+}
+.gouwuche a:hover {
+	color: #c81623;
+}
+.gouwuche span {
+	width: 16px;
+	height: 16px;
+	background: #c81623;
+	border-radius: 8px 8px 8px 0px;
+	position: absolute;
+	right: 17px;
+	top: -7px;
+	text-align: center;
+	color: #fff;
+	line-height: 16px;
+}
+.header .inner ul {
+	float: left;
+	margin-top: 8px;
+}
+.inner ul li {
+	float: left;
+}
+.inner ul li a {
+	color: #666;
+}
+.xiaoliebiao li a {
+	color: #666;
+	padding-right: 11px;
+}
+.inner ul li a:hover {
+	color: #c81623;
+}
+.shangpinfenlei {
+	width: 201px;
+	height: 46px;
+	background: #b1191a;
+	text-align: left;
+	line-height: 46px;
+	padding-left: 9px;
+	float: left;
+}
+.shangpinfenlei a {
+	color: #fff;
+}
+.liebiaoyi {
+	float: left;
+}
+.liebiaoyi ul li {
+	padding: 0px 20px;
+	font-size: 17px;
+}
+.header .inner .picyi img {
+	margin-left: 100px;
+}
+footer {
+	height: 493px;
+	margin-top: 100px;
+}
+.footer-top {
+	height: 94px;
+	background: #f5f5f5;
+}
+.footer-top div {
+	width: 215px;
+	margin: 25px 93px;
+	;
+	height: 49px;
+	float: left;
+}
+.xuanchuan {
+	margin-left: 100px;
+	height: 94px;
+	display: block;
+}
+.footer-top div:nth-child(1) {
+	background: url(images/service_items_1.png) no-repeat;
+}
+.footer-top div:nth-child(2) {
+	background: url(images/service_items_2.png) no-repeat;
+}
+.footer-top div:nth-child(3) {
+	background: url(images/service_items_3.png) no-repeat;
+}
+.footer-top div:nth-child(4) {
+	background: url(images/service_items_4.png) no-repeat;
+}
+.footer-main {
+	height: 205px;
+	margin-top: 26px;
+}
+.footer-main h3 {
+	color: #666666;
+}
+.jiaobu {
+	width: 64px;
+	float: left;
+	margin-right: 114px;
+}
+.footer-main ul li a {
+	color: #666666;
+}
+.gongji {
+	height: 205px;
+	width: 210px;
+	float: left;
+	text-align: left;
+	line-height: 25px;
+	background: url(images/footer.png) no-repeat 0px -124px;
+}
+.gongji h3 {
+	float: left;
+}
+.gongji p {
+	float: right;
+}
+.gongji p a {
+	color: #666;
+}
+.footer-bottom {
+	height: 196px;
+	margin-top: 23px;
+	text-align: center;
+}
+.footer-bottom ul li {
+	float: left;
+}
+.footer-bottom ul li a {
+	color: #666;
+	margin: 0px 5px;
+}
+.footer-bottom ul {
+	margin-left: 230px;
+}
+.bottom-pic {
+	margin-top: 13px;
+}
+.bottom-pic img {
+	margin-left: 13px;
+}
+.niner {
+	margin: 0 auto;
+	width: 1210px;
+}
+tr {
+	width: 240px;
+	height: 30px;
+}
+td {
+	width: 240px;
+	height: 100px;
+}
+#buy {
+	float: right
+}
+#edit {
+	float: right
+}
+#compute {
+	float: right;
+}
+#trigger {
+	float: right;
+}
+.hover {
+	background: #ff9900
+}

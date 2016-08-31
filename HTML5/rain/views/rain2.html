@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link href="../css/animations.css" rel="stylesheet" type="text/css">
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/touch.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    html,body{
+        height:100%;
+        width:100%;
+    }
+    .page{
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    .page img {
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    .wrap{
+        width:100%;
+        height:100%;
+        position:absolute;
+    }
+    /*                                                    第二页                                      */
+    .page-2-1{
+        background:url(../images/rain2%E6%94%B9.jpg) no-repeat left top;
+        background-size: cover;
+    }
+    .page-2-1 .img1{
+        width:24.3%;
+        left:24%;
+        top:9%;
+    }
+    .page-2-1 .img2{
+        width:100%;
+        top:4.6%;
+
+    }
+    .page-2-1 .img3{
+        left:50%;
+        top:90%;
+        margin-left:-20px;
+        width:40px;
+    }
+    .hide{
+        display: none;
+    }
+    .page-3-1{
+        background:url(../images/rian.png) no-repeat;
+        background-size:cover;
+    }
+    .page-3-1 .img1{
+        width:24.3%;
+        left:13%;
+        top:10.5%;
+    }
+    .page-3-1 .img2{
+        width:23.6%;
+        left:38.4%;
+        top:12.4%;
+    }
+    .page-3-1 .img4{
+        width:23.6%;
+        left:63.1%;
+        top:7.5%;
+    }
+    .page-3-1 .img3{
+        left:50%;
+        top:90%;
+        margin-left:-20px;
+        width:40px;
+    }
+    .page-3-1 .img5{
+        top:60%;
+        left:1.6%;
+        width:100%;
+    }
+    .page-3-1 .img6{
+        width:44%;
+        left:10.6%;
+        top:63%;
+    }
+    .page-3-1 .img7{
+        width:100%;
+        left:0;
+        top:57%;
+    }
+    .page-3-1 .img8{
+        width:19%;
+        top:48%;
+        left:60%;
+    }
+    .page-4-1{
+        background:url(../images/rain4.jpg) no-repeat;
+        background-size:cover;
+    }
+    .page-4-1 .img1{
+        width:72%;
+        top:9.2%;
+        left:9.7%;
+    }
+    .page-4-1 .img2{
+        width:30%;
+        top:30%;
+        left:13%;
+    }
+    .page-4-1 .img3{
+        width:30%;
+        top:30%;
+        left:56%;
+    }
+    .page-4-1 .img4{
+        width:30%;
+        top:62%;
+        left:13%;
+    }
+    .page-4-1 .img5{
+        width:30%;
+        top:62%;
+        left:56%;
+    }
+    /*                                                    第一页                                      */
+    .page-1-1{
+        background:url(../images/rain1.png) no-repeat;
+		background-size:cover;
+    }
+    .page-1-1 .img1{
+        width:100%;
+        top:12%;
+        left:0;
+    }
+    .page-1-1 .img3{
+        left:50%;
+        top:84%;
+        margin-left:-20px;
+        width:40px;
+    }
+    .page-1-1 .img2{
+        width:63%;
+        top:48%;
+        left:19%;
+    }
+    .page-1-1 .img4{
+        width:50%;
+        top:69%;
+        left:25%;
+    }
+    .page-1-1 .img5{
+        width:16%;
+        top:8.8%;
+        left:5.7%;
+    }
+    .page-1-1 .img6{
+        width:53%;
+        top:91%;
+        left:27%;
+    }
+</style>
+<body>
+<div class="page page-1-1">
+    <div class="wrap">
+        <img src="../images/xinanai_02.png" class="img1 pt-page-moveFromBottom">
+        <img src="../images/我的成绩-(1)_17.png" class="img3 pt-page-moveIconUp">
+        <img src="../images/xinanai-two_03.png" class="img2">
+        <img src="../images/banner-text.png" class="img4 pt-page-moveFromLeft">
+        <img src="../images/riqi.png" class="img5 pt-page-moveFromRight">
+        <img src="../images/dizhidizhi.png" class="img6 pt-page-moveFromTop">
+    </div>
+</div>
+<div class="page page-2-1 hide">
+    <div class="wrap hide">
+            <img src="../images/喊.png" class="img1 pt-page-moveFromLeft pt-page-delay200 hide">
+            <img src="../images/text改_02_02.png" class="img2 pt-page-moveFromTop hide">
+            <img src="../images/我的成绩-(1)_17.png" class="img3 pt-page-moveIconUp hide">
+    </div>
+</div>
+
+<div class="page page-3-1  hide">
+    <div class="wrap hide">
+        <img src="../images/rain_06.png" class="img1 pt-page-moveFromTop hide">
+        <img src="../images/rain_09.png" class="img2 pt-page-moveFromBottom hide">
+        <img src="../images/我的成绩-(1)_17.png" class="img3 pt-page-moveIconUp">
+        <img src="../images/rain_03.png" class="img4 pt-page-moveFromTop hide">
+        <img src="../images/mojiao_03.png" class="img5 pt-page-moveFromRight hide">
+        <img src="../images/来自韩国的魔脚.png" class="img6 pt-page-moveFromLeft hide">
+        <img src="../images/huaxian_02.png" class="img7 pt-page-moveFromLeftFade hide">
+        <img src="../images/the-squall_03.png" class="img8 pt-page-moveFromRight hide">
+    </div>
+</div>
+<div class="page page-4-1 hide">
+    <div class="wrap hide">
+        <img src="../images/weiyi.png" class="img1 pt-page-moveFromBottom hide">
+        <img src="../images/上海站_02.png" class="img2 pt-page-moveFromRight hide">
+        <img src="../images/武汉站-副本-2_02.png" class="img3 pt-page-moveFromLeft hide">
+        <img src="../images/沈阳站-副本-4_03.png" class="img4 pt-page-moveFromRight hide">
+        <img src="../images/长沙站-副本-3_02.png" class="img5 pt-page-moveFromLeft hide">
+    </div>
+</div>
+</body>
+</html>

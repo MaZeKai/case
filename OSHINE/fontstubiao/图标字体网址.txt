@@ -1,0 +1,11 @@
+图标字体网址
+http://fontawesome.io/
+
+谷歌字体网址：
+先到字库挑选字体：http://www.google.com/fonts/
+然后再网页中引入
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic'>
+
+字体转换网址：
+http://www.font2web.com/
+http://www.freefontconverter.com/

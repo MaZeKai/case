@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link href="../css/animations.css" rel="stylesheet" type="text/css">
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/touch.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    html,body{
+        height:100%;
+        width:100%;
+    }
+    .page{
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    .page img {
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    .wrap{
+        width:100%;
+        height:100%;
+        position:absolute;
+    }
+    .hide{
+        display: none;
+    }
+    .page-1-1{
+        background:url(../images/cba1.png) no-repeat;
+		background-size:cover;
+    }
+    .page-1-1 .img1{
+        width:100%;
+        top:65%;
+        left:0;
+    }
+    .page-1-1 .img2{
+            width:37.2%;
+        top:59.5%;
+        left:31.4%;
+    }
+    .page-1-1 .img3{
+        left:27%;
+        width:44%;
+        top:25.5%
+    }
+    .page-2-1{
+		background:url(../images/text.png) no-repeat;
+		background-size:cover;
+    }
+    .page-2-1 .img1{
+        width:52.2%;
+        left:6.2%;
+        top:54%;
+    }
+    .page-3-1{
+        background:url(../images/text2.png) no-repeat;
+        background-size:cover;
+    }
+    .page-3-1 .img1{
+        width:84%;
+        left:8%;
+        top:13.6%;
+    }
+    .page-3-1 .img2{
+        width:84%;
+        left:8%;
+        top:44%;
+    }
+    .page-3-1 .img3{
+        width:84%;
+        left:8%;
+        top:63%;
+    }
+    .page-4-1{
+        background:url(../images/cba4.png) no-repeat;
+        background-size:cover;
+    }
+    .page-4-1 .img1{
+        width:76%;
+        left:12.6%;
+        top:17.4%;
+    }
+    .page-4-1 .img2{
+        width:47.8%;
+        top:79%;
+        left:24.9%;
+    }
+    .page-5-1{
+        background:url(../images/cba5.png) no-repeat;
+        background-size:cover;
+    }
+    .page-5-1 .img1{
+        width:50%;
+        left:24.9%;
+        top:67.5%;
+    }
+</style>
+<body>
+<div class="page page-1-1 ">
+        <div class="warp">
+            <img src="../images/chayue_03.png" class="img1 pt-page-moveFromBottom">
+            <img src="../images/组-1.png" class="img2 pt-page-moveFromTop">
+            <img src="../images/组-2-副本.png" class="img3 pt-page-moveFromLeft">
+        </div>
+</div>
+<div class="page page-2-1 hide">
+        <div class="warp">
+            <img src="../images/duanjie.png" class="img1 pt-page-moveFromBottom hide">
+        </div>
+</div>
+<div class="page page-3-1 hide">
+        <div class="warp">
+            <img src="../images/title.png" class="img1 pt-page-moveFromTop hide">
+            <img src="../images/main-two-1.png" class="img2 pt-page-moveFromLeft hide">
+            <img src="../images/main-two-2.png" class="img3 pt-page-moveFromRight hide">
+        </div>
+</div>
+<div class="page page-4-1 hide">
+        <div class="warp">
+            <img src="../images/main-four.png" class="img1 pt-page-flipInBottom hide">
+            <img src="../images/anniu_02.png" class="img2 pt-page-moveFromBottom hide">
+        </div>
+</div>
+<div class="page page-5-1 hide">
+        <div class="warp">
+            <img src="../images/cba5-text.png" class="img1 pt-page-rotateCarouselBottomIn hide">
+        </div>
+</div>
+</body>
+</html>

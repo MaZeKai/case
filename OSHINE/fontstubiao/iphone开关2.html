@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+#box{
+	width:100px;
+	height:30px;
+	border:1px solid #ddd;
+	border-radius:30px;
+	position:relative;
+	margin:0 auto;
+	background:linear-gradient(#eee, #fff);
+	background:-webkit-linear-gradient(#eee, #fff);
+	box-shadow:0 3px 3px rgba(0,0,0,0.1) inset;
+	overflow:hidden;
+}
+.huakuai{
+	position:absolute;
+	top:0px;
+	left:-68px;
+	width:100px;
+	height:30px;
+	background:gold;
+	border-radius:30px;
+	transition:all 0.3s;
+	z-index:10;
+	box-shadow:0 3px 3px rgba(0,0,0,0.1) inset;
+}
+.huakuai:before{
+	position:absolute;
+	content:"";
+	width:2px;
+	height:10px;
+	background:#fff;
+	top:10px;
+	left:35px;
+}
+.huakuai:after{
+	position:absolute;
+	content:"";
+	width:30px;
+	height:28px;
+	border-radius:50%;
+	border:1px solid #aaa;
+	position:absolute;
+	top:0px;
+	right:0px;
+	background:-webkit-linear-gradient(#ccc, #f5f5f5);
+	background:linear-gradient(#ccc, #f5f5f5);
+}
+#box:hover .huakuai{
+	left:0;
+}
+#box:after{
+	content:"";
+	position:absolute;
+	width:5px;
+	height:5px;
+	border:3px solid #ddd;
+	border-radius:50%;
+	right:10px;
+	top:50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	z-index:5;
+}
+</style>
+</head>
+
+<body>
+<div id="box">
+	<div class="huakuai"></div>
+</div>
+</body>
+</html>

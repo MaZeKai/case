@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>iphone开关</title>
+<style type="text/css">
+.close{width:100px;height:30px;border:1px solid #e3dce3;border-radius:15px;background-image:-moz-linear-gradient(top,#ddd,#fff);margin:100px auto;position:relative;overflow:hidden;}
+.close:before{content:'';width:28px;height:28px;border-radius:50%;border:1px solid #e0e392;display:block;position:absolute;left:0;top:0;}
+.close:after{content:'';width:5px;height:5px;border-radius:50%;border:3px solid #dcdcdc;display:block;position:absolute;right:10px;top:10px;}
+
+.open{width:100px;height:30px;border:1px solid #dcdedd;border-radius:15px;background-image:-moz-linear-gradient(top,#e8c400,#ffd701,#ffd502);position:relative;margin-left:-69px;z-index:2;}
+.open:before{content:'';width:2px;height:10px;background:#fff;position:absolute;left:35px;top:10px;}
+.open:after{content:'';width:28px;height:28px;border-radius:50%;border:1px solid #bdbdc7;display:block;position:absolute;right:0;top:0;}
+
+.open:hover{margin-left:0;}
+</style>
+</head>
+
+<body>
+<div class="close">
+	<div class="open"></div>
+</div>
+</body>
+</html>

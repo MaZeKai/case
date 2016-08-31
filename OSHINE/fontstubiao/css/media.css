@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:840px){
+	.banner{width:30%;}
+	.main>header{padding:0px;}
+	.main>header{position:static;}
+	.main>header>nav>ul{width:69%;}
+	.main>.zhongjian>.one>.three{float:left;margin:83px;}
+	.main>.oneb>ul{position:static;margin-left:21%;}
+	.main>.oneb>.pic{margin-left:18px;}
+	.main>footer>.yi{width:47%;padding:70px 227px;}
+	.main>footer>.er{width: 61%;margin-left: 6%;}
+	.main>footer{height:188%;}
+	.main>footer>.san{padding:0px;padding-top:9px;margin:0px;}
+	.main>footer>.si{padding: 71px 25px;width: 100%;}
+}
+@media screen and (max-width:480px){
+	.main>header>nav>ul{display:none;}
+	.main>header{position:static;padding:0px;}
+	.main>header>nav>.logo{margin-left:68%;}
+	.main>.banner>section>.ma{width:100px;}
+	.main>.zhongjian>.three{width:96%;margin:0px;}
+	.main>.zhongjian>.one{width:96%;padding:0px;padding-left:16px;}
+	.main>.zhongjian>.two{display:none;}
+	.main>.onea>span>i{position: absolute;bottom: -28%;left: 48%;}
+	.main>.onea>span>i:before{bottom: -22%;left: 39%;}
+	.main>.onea>span>i:after{bottom: -22%;right: 42%;}
+	.main>.oneb>ul{position:static;width:68%;margin-left:20%}
+	.main>.oned>h3{left:38%;}
+	.main>footer>.yi{width:111%;}
+	.main>footer>.er{width:141%;margin-left:10%;padding:0px;}
+	.main>footer>.san{display:none;}
+	.main>footer>.si{width:115%;margin-left:10%}
+}

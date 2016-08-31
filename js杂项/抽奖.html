@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    body,div,ul,li,h1,h2,h3,h4,h5,h6,p,ol,a,dd,dt,dl,img,a{
+        margin:0;
+        padding:0;
+    }
+    body{
+        font-size:12px;
+        color:#666666;
+    }
+    a{
+        text-decoration:none;
+    }
+    li{
+        list-style:none;
+    }
+    .clear{
+        clear:both;
+    }
+    i{
+        font-style:normal;
+    }
+
+    #tur{
+        transition: all 1s;
+    }
+    .suijishu{
+        position:absolute;
+        top:10%;
+        left:50%;
+        transition :1s all ;
+        display: inline-block;
+    }
+
+</style>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script>
+    $(function(){
+        $("#score").text(parseInt(Math.random() *(6000 - 3000) + 3000));
+
+        var tab = $("#tur");
+        var point = $("#poi");
+        var wt = tab.width();
+        var ht = tab.height();
+
+        var wp = point.width();
+        var hp = point.height();
+
+        $("div").offset({left:700,top:150});
+
+        point.offset({left:(wt-wp)/2 + tab.offset().left,top:(ht-hp)/1.50+ tab.offset().top});
+
+        var deg = 0;
+        var turn = false;
+        var intervarId;
+
+        $(window).click(function(){
+            turn = !turn;
+
+            if(turn){
+                intervarId = setInterval(function(){
+                    deg += 20;
+                    tab.css("transform","rotate(" + deg + "deg)");
+                },10)
+            }else{
+                clearInterval(intervarId);
+            }
+        })
+
+    });
+</script>
+<body>
+    <img src="images/turntable.png" id="tur">
+    <img src="images/pointer.png" id="poi">
+</div>
+<p class="suijishu"> 本次购物您获取了<span id="score">0</span>积分。</p>
+</body>
+</html>

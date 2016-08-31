@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    var counter = 0;
+    function run(){
+        while (true){
+            counter = counter + 1;
+            var end = new Date().getTime();
+            if(counter >= 27000000){
+                console.log(counter);
+                counter = 0;
+                break;
+            }
+        }
+    }
+    setInterval(run,1000);
+</script>
+<body>
+
+</body>
+<script>
+    var stara = new Date().getTime();
+</script>
+</html>

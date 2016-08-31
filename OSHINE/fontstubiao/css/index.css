@@ -1,0 +1,512 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{font-family:xiaohei;src:url(../fonts/Raleway-Regular.woff);}
+html,body{
+	height:100%
+}
+.clear{
+	clear:both;
+}
+.main{width:100%;height:100%;font-family:xiaohei;}
+header,section,footer{
+	width:100%;
+	margin:auto;
+}
+.logo{
+	float:left;
+}
+.main{
+	position:relative;
+}
+header{
+	z-index:99;
+	padding:25px 30px;
+	position:fixed;
+	left: 340px;
+}
+nav{
+	float:left;
+	width:auto;
+}
+header ul{
+	float:left;
+}
+nav ul li{
+	display:inline-block;
+	margin:0px 21px;
+	line-height:51px;}
+
+header ul li a{
+	color:#333333;
+	text-transform:uppercase;
+}
+nav a i{
+	color:#000;
+	margin:19px 15px;
+}
+header ul:first-child{
+	content:'';
+	margin-left:75px;
+}
+.banner{
+	height:100%;
+	position:relative;
+	background:url(../01/images/oshin-slide-1.jpg) no-repeat center center;
+	background-size:cover;
+}
+.banner h2{
+	margin-bottom:30px;
+	position:absolute;top:39%;left:50%;transform:translateX(-50%);
+	animation:bannerone 1s;
+}
+.banner h3 a{
+	color:#000;
+}
+.banner p{
+	margin-top:30px;
+	position:absolute;top:53%;right:50%;transform:translateX(50%);
+	animation:bannerp 1s;
+	font-family:"Monotype Corsiva";
+	font-size:18px;
+}
+.banner h3{
+	animation:bannerh3 1s;
+	position:absolute;top:43%;left:50%;
+	transform:translateX(-50%);
+	font-size:45px;
+	border:7px #000 solid;
+	line-height:102px;
+	padding:0px 52px;
+}
+
+@keyframes bannerone{
+	0%{top:0}
+	100%{top:39%;}
+}
+@keyframes bannerh3{
+	0%{left:0%}
+	100%{left:50%}
+}
+@keyframes bannerp{
+	0%{right:0%}
+	100%{right:50%}
+}
+article{
+	text-align:center;
+	position:relative;
+}
+article span{
+	position:relative;
+	margin-bottom:44px;
+}
+article span:before{
+	content:'';
+	width:20px;
+	height:1px;
+	background:#ddd;
+	position:absolute;
+	left:30px;
+	top:50%;
+}
+article span:after{
+	content:'';
+	width:20px;
+	height:1px;
+	background:#ddd;
+	position:absolute;
+	right:30px;
+	top:50%;
+}
+article span .fa-stop{
+	color:#e0a240;
+	transform:rotate(-45deg);
+}
+.titlle h3{
+	font-size:25px;
+	margin-bottom:46px;
+	line-height:94px;
+
+}
+.titlleone{
+	margin-bottom:91px;
+	font-family:"Monotype Corsiva";
+	font-size:18px;
+	color:#5f6263;
+}
+.titlletwo{
+	line-height:43px;
+}
+.img{
+	width:80%;
+	margin:0 auto;
+}
+.img img{
+	width:100%;
+	display:block;}
+.ma{
+	height:247px;
+}
+.ma>div{
+	height:185px;
+	width:25%;
+	float:left;
+	padding-top:62px;
+	text-align:center;
+}
+.ma>div i{
+	font-size:95px;color:#000;
+}
+.ma>div>div:hover{
+	margin-top:-60px;transition:all 1s;
+}
+.ma div:nth-child(2n){
+	background:#edf0f2;
+}
+.ma div:nth-child(2n+){
+	background:#f2f5f8;
+}
+.one{
+	float:left;
+	width:24%;
+	margin-top:90px;
+	padding-left:83px;
+	padding-right:81px;
+	font-size:15px;
+	margin-right:100px;
+}
+.one h3{
+	line-height:33px;
+	float:left;
+}
+.one h3 i{
+	color:#e0a241;
+	font-size:30px;
+	margin-right:31px;
+}
+.one p{
+	line-height:40px;
+	float:left;
+	margin-bottom:69px;
+}
+.two img{
+	float:left;
+}
+.two{
+	margin-top:90px;
+}
+.three{
+	float:right;
+	width:21%;
+	margin-top:90px;
+	margin-right:135px;
+}
+.three h3{
+	line-height:33px;
+	float:left;
+}
+.three p{
+	line-height:40px;
+	float:left;
+	margin-bottom:69px;
+	font-size:15px;
+}
+.three h3 i{
+	color:#e0a241;
+	font-size:30px;
+	margin-right:31px;
+}
+.zhongjian:after{
+	content:'';
+	clear:both;
+	display:block;
+}
+.three h3:nth-child(3)i{
+	content:'';
+	margin-right:-5px;
+}
+.beijingtu{
+	background:url(../01/images/%E8%A7%86%E5%B7%AE%E5%9B%BE%E5%AE%8C%E6%95%B4%E4%B8%80%E5%BC%A0.jpg) no-repeat center center;
+	height:401px;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.maodian{
+	width:40px;
+	height:40px;
+	background:#e0a240;
+	color:#fff;
+	text-align:center;
+	line-height:40px;
+	position:fixed;
+	bottom:65px;
+	right:20px;
+}
+.maodian a{
+	color:#fff;
+}
+.onea{
+	text-align:center;
+	position:relative;
+	margin-bottom:86px;
+}
+.onea h3{
+	font-size:20px;
+	line-height:50px;
+	margin-top:100px;
+}
+.onea p{
+	line-height:40px;
+	margin-bottom:45px;
+	font-family:"Monotype Corsiva";
+	font-size:18px;
+
+}
+.onea span .fa-stop{
+	color:#e0a240;
+	transform:rotate(-45deg);
+}
+.onea span:before{
+	content:'';
+	width:20px;
+	height:1px;
+	position:absolute;
+	bottom:6%;
+	left:47%;
+	background:#ddd;
+}
+.onea span:after{
+	content:'';
+	width:20px;
+	height:1px;
+	position:absolute;
+	bottom:6%;
+	right:47%;
+	background:#ddd;
+}
+.oneb{
+	position:relative;
+}
+.oneb ul{
+	float:left;
+	position:absolute;
+	left:37%;
+}
+.oneb ul li{
+	float:left;
+	line-height:45px;
+	text-align:center;
+	margin-right:30px;
+}
+.oneb ul li a{
+	color:#222;
+	font-size:16px;
+	text-transform:uppercase;
+}
+.oneb ul li:hover a{
+	padding:10px 22px;;
+	color:#e0a240;
+	border:1px solid #e0a240;
+}
+.pic img{
+	width:30%;
+	padding:20px;;
+	padding-left:35px;
+}
+.pic{
+	padding:20px;
+	padding-top:50px;
+}
+.goumai{
+	text-align:center;
+	margin-bottom:90px;
+}
+.goumai a{
+	color:#333;
+}
+.goumai:hover a{
+	border:1px #333 solid;
+	padding:17px;
+}
+.onec{
+	text-align:center;
+	position:relative;
+	margin-bottom:90px;
+}
+.onec h3{
+	margin-top:100px;
+	margin-bottom:50px;
+}
+.onec p{
+	margin-bottom:50px;
+	font-family:"Monotype Corsiva";
+	font-size:18px;
+}
+.onec span i{
+	transform:rotate(-45deg);
+	color:#e0a240;
+}
+.onec span:before{
+	content:'';
+	width:20px;
+	height:1px;
+	background:#ddd;
+	position:absolute;
+	left:47%;
+	bottom:6%;
+}
+.onec span:after{
+	content:'';
+	width:20px;
+	height:1px;
+	background:#ddd;
+	position:absolute;
+	right:47%;
+	bottom:6%;
+}
+.big-pic{
+	text-align:center;
+	margin-top:76px;
+	margin-bottom:90px;
+}
+.big-pic img{
+	padding:10px;
+}
+.oned{
+	background:url(../01/images/heise_03.gif);
+	padding-bottom:130px;
+}
+.oned .oned-niner{
+	text-align:center;
+	color:#fff;
+}
+.oned h2{
+	line-height:50px;
+	padding-top:100px;
+}
+.oned p{
+	line-height:20px;
+	padding-bottom:40px;
+}
+.oned h3{
+	width:110px;
+	height:44px;
+	position:absolute;
+	left:47%;
+	background:#f0b452;
+	line-height:44px;
+	font-weight:normal;
+	font-size:13px;
+}
+.oned h3 a{
+	color:#fff;
+}
+.onee{
+	text-align:center;
+	background:#f2f3f8;
+	padding-top:97px;
+}
+.onee span i{
+	font-size:100px;
+	color:#dfdfdf;
+}
+.onee p{
+	padding-top:15px;
+	line-height:24px;
+}
+.onee .huangse{
+	color:#e6a240;
+	line-height:24px;
+}
+.onee h4{
+	line-height:36px;
+	padding-bottom:100px;
+}
+footer{
+	background:#f2f3f8;
+	height:70%;
+}
+footer .yi{
+	width:19%;
+	padding:70px 60px;
+	float:left;
+}
+footer .yi p{
+	line-height:40px;
+}
+footer .yi img{
+	padding-bottom:37px;
+}
+footer .yi ul li{
+	margin-right:14px;
+}
+footer .yi ul li i{
+	font-size:15px;
+	line-height:38px;
+}
+footer .yi ul li a{
+	color:#e0a549;
+}
+footer .yi ul{
+	padding-top:36px;
+}
+footer .yi li{
+	border-radius:50% 50% 50% 50%;
+	border:1px solid #e0a549;
+	width:10%;
+	height:35px;
+	display:inline-block;
+	text-align:center;
+}
+.er{
+	float:left;
+	padding:71px 0px;
+}
+.er img{
+	float:left;
+}
+.er .xiaotu{
+	padding:30px 0px;
+}
+.er span{
+	float:left;
+	line-height:30px;
+	padding-left:10px;
+}
+.er .xiaotuer{
+	padding:30px 0px;
+}
+.er .xiaotuer img{
+	width:13.5%;
+}
+.san{
+	float:left;
+	padding:71px 0px;
+	margin-right:225px;
+}
+.san ul li a{
+	color:#818383;
+}
+.san ul li span{
+	padding-right:15px;
+	padding-left:5px;
+}
+.san ul li span:hover{
+	color:#ebba4b;
+}
+.san ul li{
+	padding-top:26px;
+}
+.si img{
+	width:27%;
+	height:130px;
+	padding:15px;
+}
+.si{
+	padding:71px 0px;
+	width:25%;
+	float:left;
+}
+.banquan{
+	text-align:center;
+	line-height:70px;
+}

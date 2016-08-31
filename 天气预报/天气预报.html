@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>不能信的预报</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        .tishii{
+            position:absolute;
+            left:0;
+            top:19px;
+            font-size:12px;
+        }
+        table{
+            margin:30px;
+        }
+        table, tr, th, td{
+            border:1px solid red;
+        }
+        th,td{
+            padding:10px;
+            background-color:#c0a16b;
+        }
+        td img{
+            margin-right:10px;
+        }
+        .xianshi{
+            width:300px;
+            height:50px;
+            border:1px solid #F37304;margin:20px;
+            line-height:50px;
+            display: none;
+        }
+        #btn{
+            border:none;
+            background:#15B4ED;
+            color:#fff; ;
+        }
+        #chengshi{
+            border:#15B4ED 1px solid;
+        }
+    </style>
+
+    <script src="js/ajax.js"></script>
+    <script>
+        window.onload= function () {
+            var city=document.getElementById("chengshi");
+            function select(city) {
+                var option= {
+                    method: "GET",
+                    url: "data/weather" + city + ".json",
+                    success: showdata,
+                    fail: function () {
+                        document.getElementById("result").innerHTML = "不成功";
+                    }
+                };
+                return option;
+            }
+
+            function showdata(datas){
+
+                var table=document.createElement("table");
+                var tr=document.createElement("tr");
+                var json=datas.data.yesterday;
+                for(var key in json){
+                    var td=document.createElement("td");
+                    console.log(json);
+                    td.innerHTML=json[key];
+                    if(key == "type"){
+                        td.innerHTML= '<img src="images/' + json[key] +'01.gif">' + json[key];
+                    }
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr);
+                var jsons=datas.data.forecast;
+                for(var i=0;i<jsons.length;i++){
+                    var json=jsons[i];
+                    var tr=document.createElement("tr");
+                    for(var key in json){
+                        var td=document.createElement("td");
+                        td.innerHTML=json[key];
+                        if(key == "type"){
+                            td.innerHTML= '<img src="images/' + json[key] +'01.gif">' + json[key];
+                        }
+                        if(i==0 && key == "type"){
+                            td.innerHTML= '<img src="images/' + json[key] +'02.gif">' + json[key];
+                        }
+                        tr.appendChild(td);
+                    }
+                    table.appendChild(tr);
+                }
+
+                document.getElementById("main").innerHTML="";
+                document.getElementById("main").appendChild(table);
+                document.getElementById("case").style.display="block";
+                document.getElementById("case").innerHTML=" 城市：" + datas.data.city + ";" + " 时间：" + jsons[0].date;
+            }
+
+
+            document.getElementById("btn").onclick=function(){
+                $.getJSON(select(city.value));
+
+            };
+        };
+    </script>
+</head>
+<body>
+<input id="chengshi">
+<button id="btn">查询</button>
+
+<div class="tishii">
+    <p>广州,深圳,北京</p>
+</div>
+
+<div class="xianshi" id="xianshi"></div>
+<div id="main"></div>
+
+</body>
+</html>

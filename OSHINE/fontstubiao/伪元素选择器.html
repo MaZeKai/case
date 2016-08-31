@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>伪元素选择器</title>
+<style type="text/css">
+p:before{
+	content:"“";
+}
+p:after{
+	content:"”";
+}
+.clear{
+	clear:both;
+}
+#box{
+	width:1080px;
+	height:205px;
+	margin:100px auto;
+	box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+.list{
+	width:200px;
+	height:200px;
+	background:tomato;
+	float:left;
+	margin-right:20px;
+}
+.list:first-child{
+	background:gold;
+}
+.list:last-child{
+	margin:0;
+}
+.list:nth-child(2n+1){
+	border-top:5px solid red;
+}
+</style>
+</head>
+
+<body>
+<p>你好</p>
+<p>你好</p>
+<p>您吃饭了吗？</p>
+<p>我吃了，您呢？</p>
+<p>我也吃了。</p>
+<p>您吃的啥啊</p>
+<p>您好，我现在不在，一会再和您联系。</p>
+
+<div id="box">
+	<div class="list"></div>
+	<div class="list"></div>
+	<div class="list"></div>
+	<div class="list"></div>
+	<div class="list"></div>
+</div>
+</body>
+</html>

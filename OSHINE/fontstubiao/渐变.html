@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>渐变</title>
+<style type="text/css">
+section{
+	width:1000px;
+	margin:50px auto;
+	font:14px/18px arial;
+	text-align:center;
+}
+div{
+	width:480px;
+	height:200px;
+	float:left;
+	margin:0 20px 20px 0;
+}
+.div1{
+	background-image:-webkit-linear-gradient(red 25%,orange 50%);
+}
+.div2{
+	background-image:-webkit-linear-gradient(left,red,orange);
+}
+.div3{
+	background-image:-webkit-linear-gradient(0deg,red,orange);
+}
+.div4{
+	background-image:-webkit-linear-gradient(45deg,red,orange);
+}
+.div5{
+	background-image:-webkit-radial-gradient(red,orange);
+}
+.div6{
+	background-image:-webkit-radial-gradient(top, red, orange);
+}
+</style>
+</head>
+
+<body>
+<section>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+	<div class="div4"></div>
+	<div class="div5"></div>
+	<div class="div6"></div>
+</section>
+</body>
+</html>

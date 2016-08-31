@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, h1, h2, h3, h4, h5, h6, ul, li, ol, a, div {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+.body {
+	font-size: 14px;
+}
+body {
+	font-family: "微软雅黑 Light";
+	font-size: 14px;
+}
+.head {
+	border-top: 4px #6e6e6e solid;
+	height: 145px;
+	border-bottom: #dcdcdc 4px solid;
+}
+.headniner {
+	margin: auto;
+	width: 1111px;
+}
+.head-top {
+	height: 78px;
+}
+.logo {
+	float: left;
+	height: 79px;
+	width: 930px;
+}
+.tel {
+	float: right;
+}
+.phonea {
+	margin-right: 20px;
+	line-height: 30px;
+	width: 100px;
+	padding-left: 29px;
+	background:url(../images/header_06.png) no-repeat left center;
+	font-size: 18px;
+}
+.sousuo {
+	width: 126px;
+	height: 25px;
+	border: 1px #c0c0c0 solid;
+	background-position: right;
+	float: right;
+	margin-top: 17px;
+}
+.head-bot {
+	height: 72px;
+	padding-bottom: 15px;
+	margin: 10px;
+}
+.head-bot li {
+	float: left;
+	color: #333333;
+	margin-right: 78px;
+}
+.head-bot li a {
+	color: #333333;
+}
+.head-bot ul {
+	height: 72px;
+}
+.head-bot ul li span {
+	color: #a199a1;
+}
+.bannner {
+	background-image:url(../images/zgs_02.jpg);
+	background-repeat: no-repeat;
+	height: 365px;
+}
+.main-top {
+	height: 51px;
+	background-color: #dcdcdc;
+}
+.main-topone {
+	text-align: center;
+	width: 1111px;
+	margin: auto;
+}
+.main-topone ul li {
+	float: left;
+	font-size: 18px;
+	line-height: 50px;
+	margin-right: 80px;
+}
+.main-topone ul {
+	margin-left: 350px;
+}
+.gongsi {
+	background-image:url(../images/kuangzi_03.jpg);
+	background-repeat: no-repeat;
+	height: 56px;
+	width: 110px;
+	margin-top: 2px;
+}
+.main {
+	width: 1120px;
+	height: 354px;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.titlle {
+	height: 71px;
+	border-bottom: #cccccc 1px solid;
+}
+.titlle h3 {
+	text-align: center;
+	line-height: 71px;
+	font-size: 24px;
+	font-weight: normal;
+}
+.chenghu {
+	border: #cccccc 1px solid;
+	width: 252px;
+	height: 29px;
+	margin-bottom: 23px;
+}
+.youxiang {
+	margin-left: 21px;
+	margin-bottom: 23px;
+}
+.Email {
+	border: #cccccc 1px solid;
+	width: 252px;
+	height: 29px;
+}
+.neirong {
+	padding-left: 150px;
+	width: 473px;
+	margin: auto;
+}
+.lynr {
+	width: 403px;
+	height: 80px;
+	margin-bottom: 23px;
+}
+.anniujian {
+	width: 80px;
+	height: 30px;
+	margin-right: 12px;
+}
+.maininer {
+	height: 278px;
+	margin-top: 26px;
+}
+.foot {
+	height: 283px;
+	background: #9e9e9e;
+}
+.footniner {
+	margin: auto;
+	width: 1111px;
+}
+.foot-one {
+	float: left;
+	width: 150px;
+	height: 105px;
+	margin-top: 27px;
+}
+.foot-one h3 {
+	color: #ffffff;
+	line-height: 30px;
+}
+.foot-one li {
+	color: #bdbdbf;
+	line-height: 30px;
+}
+.foot-one img {
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.foot-two {
+	float: left;
+	width: 100px;
+	height: 105px;
+	margin-top: 27px;
+	margin-left: 84px;
+}
+.foot-two h3 {
+	color: #ffffff;
+	line-height: 30px;
+}
+.foot-two li {
+	color: #bdbdbf;
+	line-height: 30px;
+}
+.foot-two li a {
+	color: #bdbdbf;
+	font-size: 12px;
+}
+.banquan {
+	background-color: #666666;
+	height: 57px;
+}
+.niner {
+	margin: auto;
+	width: 1111px;
+}
+.one {
+	text-align: center;
+	float: left;
+	line-height: 55px;
+	color: #fff;
+}
+.two {
+	float: right;
+	padding-top: 15px;
+}
+.main-topone li a {
+	color: #000;
+}
+.txt {
+	padding-left: 10px;
+	border: 1px solid #c0c0c0;
+	line-height: 21px;
+	width: 134px;
+}
+.btn {
+	width: 28px;
+	height: 30px;
+	border: none;
+	background:url(../images/tubian_03.jpg) no-repeat right;
+}
+.phonea a {
+	color: #000;
+} 

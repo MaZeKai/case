@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0}
+.box{width:200px;height:200px; position:absolute;top:100px;left:300px;}
+
+/*四边*/
+.box .t{width:100%;height:10px; position:absolute;top:0;left:0; background:#666;z-index:1;cursor: row-resize;}
+.box .r{width:10px;height:100%; position:absolute;top:0;right:0; background:#666; cursor: col-resize; z-index:1;}
+.box .b{width:100%;height:10px; position:absolute;bottom:0;left:0; background:#666;z-index:1;cursor:row-resize;}
+.box .l{width:10px;height:100%; position:absolute;top:0;left:0; background:#666;z-index:1;cursor:col-resize;}
+
+/*四角*/
+.box .tl{width:20px;height:20px;position:absolute;top:-5px;left:-5px; background:#CCC;z-index:2;cursor:nwse-resize}
+.box .tr{width:20px;height:20px; position:absolute;top:-5px;right:-5px;background:#CCC;z-index:2;cursor:nesw-resize}
+.box .br{width:20px;height:20px; position:absolute;bottom:-5px;right:-5px; background:#CCC;z-index:2; cursor:nwse-resize;cursor:nwse-resize}
+.box .bl{width:20px;height:20px; position:absolute;bottom:-5px;left:-5px; background:#CCC;z-index:2;cursor:nesw-resize}
+
+/*图片*/
+img{ width:100%; height:100%;}
+</style>
+
+<script sr src="js/hxsd_tools.js"></script>
+<script>
+window.onload=function(){
+	var oDiv=document.getElementsByTagName('div')[0];
+	//var aSpan=oDiv.children;
+	aSpan=document.getElementsByTagName('span');
+	
+	for(var i=0;i<aSpan.length;i++){
+		dragFn(aSpan[i]);	
+	};
+	
+	//整体拖拽
+	drag(oDiv);
+	
+	
+	function dragFn(obj){
+		obj.onmousedown=function(ev){
+			var oEv=ev||event;
+			oEv.cancelBubble=true;
+			
+			var oldWidth=oDiv.offsetWidth;
+			var oldHeight=oDiv.offsetHeight;
+			var oldX=oEv.clientX;
+			var oldY=oEv.clientY;
+			var oldLeft=oDiv.offsetLeft;
+			var oldTop=oDiv.offsetTop;
+			
+			document.onmousemove=function(ev){
+				var oEv=ev||event;
+				oEv.cancelBubble=true;
+			  	//r	
+			  	if(obj.className=="r") {
+			  		oDiv.style.width=oldWidth+oEv.clientX-oldX+'px';
+			  	};
+			  
+			  	//b
+			  	if(obj.className=="b"){
+			  		oDiv.style.height=oldHeight+oEv.clientY-oldY+'px';
+			  	};
+				
+			  	//  l
+			  	if(obj.className=="l"){
+					oDiv.style.width=oldWidth-(oEv.clientX-oldX)+'px';	
+				  	oDiv.style.left=oldLeft+(oEv.clientX-oldX)+'px';
+			  	};
+				  
+			  	//t
+			  	if(obj.className=="t"){
+					oDiv.style.height=oldHeight-(oEv.clientY-oldY)+'px';	
+					oDiv.style.top=oldTop+(oEv.clientY-oldY)+'px';
+			  	};
+				//四角-------------------------------------------------z
+				if(obj.className=="tl"){
+					oDiv.style.height=oldHeight-(oEv.clientY-oldY)+'px';
+					oDiv.style.width=oldWidth-(oEv.clientX-oldX)+'px';
+					oDiv.style.left=oldLeft+(oEv.clientX-oldLeft)+'px';
+					oDiv.style.top=oldTop+(oEv.clientY-oldTop)+'px';
+				};
+				if(obj.className=="tr"){
+					oDiv.style.height=oldHeight-(oEv.clientY-oldY)+'px';
+					oDiv.style.width=oldWidth+oEv.clientX-oldX+'px';
+					oDiv.style.top=oldTop+(oEv.clientY-oldTop)+'px';
+				};
+				if(obj.className=="br"){
+					oDiv.style.height=oldHeight+(oEv.clientY-oldY)+'px';
+					oDiv.style.width=oldWidth+oEv.clientX-oldX+'px';
+
+				};
+				if(obj.className=="bl"){
+					oDiv.style.height=oldHeight+(oEv.clientY-oldY)+'px';
+					oDiv.style.width=oldWidth-(oEv.clientX-oldX)+'px';
+					oDiv.style.left=oldLeft+(oEv.clientX-oldLeft)+'px';
+				};
+			};
+
+			document.onmouseup=function(){
+				document.onmousemove=document.onmouseup=null;
+			};
+			return false;
+		};
+	}
+
+};
+</script>
+</head>
+
+<body>
+<div class="box">
+ <span class="t"></span>
+ <span class="r"></span>
+ <span class="b"></span>
+ <span class="l"></span>
+ 
+ <span class="tl"></span>
+ <span class="tr"></span>
+ <span class="br"></span>
+ <span class="bl"></span>
+
+
+ <img src="imges/536aa2e2a7f4164e20468743ed6e2f70.jpg">
+</div>
+</body>
+</html>

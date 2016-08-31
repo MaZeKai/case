@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:feizhuliu;
+	font-size:15px;
+}
+@font-face{
+	font-family:feizhuliu;
+	src:url(../%E5%AD%97%E4%BD%93/fonts/Munro.eot),url(../%E5%AD%97%E4%BD%93/fonts/Munro.otf),url(../%E5%AD%97%E4%BD%93/fonts/Munro.ttf),url(../%E5%AD%97%E4%BD%93/fonts/Munro.woff);
+}
+header{
+	background:#e5e5e5;
+}
+.inner{
+	width:1000px;
+	margin:0 auto;
+	padding:55px 0px;
+	position:relative
+}
+.logo{
+	float:left;
+	color:#468f9e;
+	font-size:50px;
+	position:absolute;
+	top:23px;
+	left:0px;
+}
+.tubiao{
+	font-size:50px;
+	margin-right: 10px;
+}
+nav{
+	float:right;
+}
+.one{
+	background-image:-moz-linear-gradient(45deg,#9dc66a,#4fa59a,#4361c3);
+	background-image:-ms-linear-gradient(45deg,#9dc66a,#4fa59a,#4361c3);
+	background-image:-webkit-linear-gradient(45deg,#9dc66a,#4fa59a,#4361c3);
+	background-image:-o-linear-gradient(45deg,#9dc66a,#4fa59a,#4361c3);
+}
+.one .inner{
+	padding:100px 0px;
+	text-align:center;
+}
+.one .inner h3{
+	line-height:61px;
+	font-weight:normal;
+	color:#Fff;
+}
+.one .inner h2:before{
+	content:'';width:1px;height:100px;
+	background:#fff;
+	position:absolute;
+	top:54px;
+	left:50%;
+}
+.one .inner h3 span{
+	font-weight:bold;
+}
+.one .inner h3 a{ position:relative;color:#fff;}
+.one .inner h3 a:before{content:""; border-bottom:1px dotted #FFFFFF; position:absolute; left:0px; bottom:0px; width:170px;}
+.one .inner h3 a:after{content:""; border-bottom:1px dotted #FFFFFF; position:absolute; left:0px; top:100%; width:170px; transition: all 1s;
+}
+.one .inner h3 a:hover:after{ content:""; top:0px;}
+.one .inner p{
+	line-height:40px;
+	color:#fff;
+}
+.one .inner h2 a{
+	width:177px;
+	height:52px;
+	display:inline-block;
+	border-radius:4px;
+	line-height:50px;
+	border:1px #fff solid;
+	color:#fff;
+}
+.one .inner h2{
+	margin-top:44px;
+	position:relative; 
+}
+.inner h2 a:hover{
+	width:200px;
+	background:rgba(255,255,255,0.75);
+	transition:all 1s linear;
+}
+.two .inner ul{
+	float:left;
+	width:500px;
+}
+.article{
+	float:right;
+	width:500px;
+}
+footer{
+	background-image:-moz-linear-gradient(45deg,#9dc66a,#4fa59a,#4361c3);
+	background-image:-ms-linear-gradient(45deg,#9dc66a,#4fa59a,#4361c3);
+	background-image:-webkit-linear-gradient(45deg,#9dc66a,#4fa59a,#4361c3);
+	background-image:-o-linear-gradient(45deg,#9dc66a,#4fa59a,#4361c3);
+}
+footer .inner{
+		padding:100px 0px;
+		text-align:center;
+		position:relative;
+}
+.two{
+	background:#eaf9fe;
+	margin:0 auto;
+}
+.two ul li{
+	width:139px;
+	height:139px;
+	border-radius:5px;
+	border:1px solid #6599a8;
+	float:left;
+	margin-right:84px;
+	margin-bottom:80px;
+	font-size:60px;
+	text-align:center;
+	line-height:139px;
+	transform:rotate(45deg)
+}
+.two ul  li:hover{
+	background:#15B4ED;
+}
+.two ul li a i{
+	transform:rotate(-45deg);
+	transition:all 0.5s;
+}
+.two ul li:first-child a{
+	color:#c4e795;
+}
+.two ul li:first-child:hover a i{
+	transform:scale(1.6) rotate(-45deg);
+}
+.two ul li:last-child a{
+	color:#6a89e4;
+}
+.two ul li:last-child:hover a i{
+	content:'';
+	transform:rotate(-45deg) translateY(-10px);
+}
+.two ul li:nth-child(2) a{
+	color:#c4e795;
+}
+.two ul li:nth-child(2) a :hover{
+	content:'';
+	transform:rotate(310deg);
+}
+.two ul li:nth-child(3) a{
+	color:#6bd3c8;
+}
+.two ul li:nth-child(3):hover a i{
+	transform:rotate(-45deg) skew(40deg);
+}
+.two ul li:nth-child(4) a{
+	color:#58add2;
+}
+.two ul li:nth-child(4):hover a i{
+	transform:scale(2) rotate(-45deg) rotate(50deg);
+}
+.two ul li:nth-child(5) a{
+	color:#4b86d2;
+}
+.two ul li:nth-child(5):hover a i{
+	transform:rotate(-45deg) scale(0.5);
+}
+article h3{
+	color:#41839d;
+	line-height:69px;
+	margin-bottom:35px;
+}
+article p{
+	line-height:30px;
+	margin-bottom:33px;
+}
+.yun{
+	font-size:60px;
+	color:#fff;
+	
+}
+.yun i{animation:donghua 3s infinite;
+	
+}
+@keyframes donghua{
+	0%{ text-shadow:0px 0px 0px #fff;}
+	50%{text-shadow:0px 0px 30px #fff;}
+	100{text-shadow:0px 0px 0px #fff;}
+}
+footer .inner ul{
+	position: absolute;
+	bottom: 155px;
+	left: 382px;
+}
+footer .inner ul li{
+	float:left;
+	
+}
+footer .inner ul li a{
+	color:#ddd;
+	font-size:30px;
+	margin:10px;
+}
+footer .inner ul li a :hover{
+	transform:scale(1.5);
+	transition:all 0.7s ;
+}
+footer .inner ul li a i:hover{
+	color:#fff;
+}

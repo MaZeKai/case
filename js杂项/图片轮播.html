@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <style>
+        body, ul {
+            margin: 0;
+            padding: 0;
+            width:1240px;
+        }
+        #ad {
+            width: 620px;
+            height: 340px;
+            overflow: hidden;
+        }
+        #ad ul li{
+            float: left;
+            list-style: none;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#rightAnim").click(function(){
+                var ul = $("#ad ul");
+                var last = ul.find("li:last");
+
+                ul.find("li:animated").stop().css("margin-left","0px");
+
+                ul.prepend(last);
+
+                last.css("margin-left", "-620px");
+
+                last.animate({"margin-left": "0px"}, "slow");
+
+            });
+
+            $("#leftAnim").click(function(){
+                var ul = $("#ad ul");
+                var first = ul.find("li:first");
+
+                ul.find("li:animated").stop().appendTo(ul).css("margin-left", "0px");
+
+                first.animate({"margin-left":"-620px"}, "slow", function(){
+                    ul.append(first);
+                    first.css("margin-left", "0px");
+                });
+            });
+
+            $("#left").click(function(){
+                var ul = $("#ad ul");
+                var first = ul.find("li:first");
+                ul.append(first);
+            });
+
+            $("#right").click(function(){
+                var ul = $("#ad ul");
+                ul.prepend( ul.find("li:last") );
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="ad">
+    <ul>
+        <li><img src="images/ad1.jpg"/></li>
+        <li><img src="images/ad2.jpg"/></li>
+        <li><img src="images/ad3.jpg"/></li>
+        <li><img src="images/ad4.jpg"/></li>
+    </ul>
+</div>
+
+<input id="left" value="left" type="button"/>
+<input id="right" value="right" type="button"/>
+<input id="leftAnim" value="leftAnim" type="button"/>
+<input id="rightAnim" value="rightAnim" type="button"/>
+</body>
+</html>

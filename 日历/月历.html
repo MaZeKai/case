@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #calendar {
+        width: 210px;
+        margin: 100px auto;
+        overflow: hidden;
+        border: 1px solid #666666;
+        padding: 20px;
+    }
+
+    #title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #calendar .week {
+        height: 30px;
+        line-height: 20px;
+        border-bottom: 1px solid #f0b452;
+        margin-bottom: 18px;
+    }
+
+    #calendar .week li {
+        float: left;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        list-style: none;
+    }
+
+    #calendar .dateUl {
+        overflow: hidden;
+        clear: both;
+    }
+
+    #calendar .dateUl li {
+        float: left;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        list-style: none;
+    }
+
+    #calendar .dateUl li.ccc {
+        color: #Ccc;
+    }
+
+    #calendar .dateUl li.red {
+        color: red;
+        background: #F90;
+    }
+
+    #calendar .dateUl li.sun {
+        color: #d58512;
+    }
+
+    .dateUl {
+        line-height: 25px;
+    }
+
+    .a1 {
+        float: left;
+        color: #d58512;
+    }
+
+    .a2 {
+        float: right;
+        color: #d58512;
+    }
+
+    .clear {
+        clear: both;
+    }
+</style>
+<script>
+    window.onload = function () {
+        var calender = document.getElementById('calendar');
+        var day_list = document.getElementById("date_list");
+        var title = document.getElementById("title");
+
+        var allDays;
+        var firstDay_week;
+        var today;
+        var iNow = 1;
+        var oPre = document.getElementById("pre");
+        var oNext = document.getElementById("next");
+
+        fn();
+
+        oNext.onclick = function () {
+            iNow++;
+            fn();
+        };
+
+        oPre.onclick = function () {
+            iNow--;
+            fn();
+        };
+        function fn() {
+            var all_day;
+            //所有的天数
+            // var f_week;
+            //第一天是星期几？
+            //今天
+
+            //找到必要的数据
+            var oDate = new Date();
+            // oDte.setMonth(oDate.getMonth()+iNow);
+            today = oDate.getDate();
+            oDate.setDate(1);
+            var f_week_ = oDate.getDay();
+            oDate.setMonth(oDate.getMonth() +  iNow,0);
+            all_day = oDate.getDate();
+            day_list.innerHTML = '';
+
+
+            if (f_week_ == 0) {
+                f_week_ = 7;
+            }
+            //塞到1日星期之前的空白
+            for (var i = 1; i < f_week_; i++) {
+                var oLi = document.createElement("li");
+                day_list.appendChild(oLi);
+            }
+//            console.log(f_week_);
+            for (var i = 0; i < all_day; i++) {
+                var li = document.createElement("li");
+                li.innerHTML = i + 1;
+                day_list.appendChild(li);
+            }
+
+            var aLi = day_list.children;
+
+            for(var i = 0; i < aLi.length; i++){
+                if(aLi[i].innerHTML == "") continue;
+//                console.log((parseInt(aLi[i].innerHTML) + f_week_ - 1) % 7);
+                if((parseInt(aLi[i].innerHTML) + f_week_ - 1) % 7 == 6 || (parseInt(aLi[i].innerHTML) + f_week_ - 1) % 7 == 0){
+                    aLi[i].className = "sun";
+                }
+                if(parseInt(aLi[i].innerHTML) == today) {
+                    aLi[i].className = "red";
+                }
+            }
+
+            title.innerHTML = oDate.getFullYear() + "年" + (oDate.getMonth() + 1) + "月";
+
+        }
+
+
+    }
+</script>
+<body>
+<div id="calendar">
+    <h4 id="title"></h4>
+    <a href="#" id="pre" class="a1">上月</a>
+    <a href="#" id="next" class="a2">下月</a>
+
+    <div class="clear"></div>
+    <ul class="week">
+        <li>一</li>
+        <li>二</li>
+        <li>三</li>
+        <li>四</li>
+        <li>五</li>
+        <li>六</li>
+        <li>七</li>
+    </ul>
+    <ul id="date_list" class="dateUl"></ul>
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+</div>
+</body>
+</html>

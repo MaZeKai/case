@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+@media screem and (max-width:1280px){
+	body{width:100%}
+}
+@media screem and (max-width:840px){
+	.banner{width:30%;}
+	header nav{display:none;}
+}
+@media screem and (max-width:1280px){
+	
+}
